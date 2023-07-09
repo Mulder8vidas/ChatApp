@@ -1,0 +1,56 @@
+<div class="nav-header">
+  <img src="log" alt="Logo">
+</div>
+<div class="login-container">
+<!--
+  {{form.controls['email'].hasError('required')}}
+  {{form.controls['email'].hasError('pattern')}}-->
+  <div class="login-contenedor">
+  <div class="header-container">
+     <form [formGroup]="form"(ngSubmit)="Login()">
+       <div class="">
+         <div class="title-login">
+           <h1>Accede a la red empresarial y únete a la conversación segura y productiva.</h1>
+         </div>
+         <div class="cajadata">
+           <span>Usuario:</span>
+           <div class="caja-datos">
+             <label><i class="fa-solid fa-user"></i></label>
+             <input formControlName="email" class="form-control" type="text" placeholder="usuario@sistema.com ">
+           </div>
+
+         </div>
+         <span *ngIf="form.controls['email'].hasError('pattern')" style="color: red !important;">
+          Porfavor ingresa un correo valido
+           </span>
+         <span *ngIf="form.controls['email'].hasError('required') && form.controls['email'].dirty" style="color: red !important;">
+          Porfavor llene el cmapo de correo
+           </span>
+         <div class="cajadata">
+         <span>Contraseña:</span>
+         <div class="caja-datos">
+           <label> <i class="fa-solid fa-lock"></i></label>
+           <input formControlName="password" class="form-control" type="password" placeholder="Ingrese su clave">
+         </div>
+       </div>
+       </div>
+
+       <div class="btn">
+         <div class="boton-login">
+           <button class="btn btn-md btn-primary btn-style" [disabled]="form.invalid" [ngStyle]="{'opacity': form.invalid ? '0.7' : '1'}">Login</button>
+
+
+         </div>
+       </div>
+
+     </form>
+  </div>
+    <div class="img-login">
+      <img src="assets/undraw_business_chat_re_gg4h.svg" alt="">
+    </div>
+  </div>
+</div>
+
+
+<!--<input type="file" (change)="onFileSelected($event)" accept="image/*">
+{{base64image}}-->

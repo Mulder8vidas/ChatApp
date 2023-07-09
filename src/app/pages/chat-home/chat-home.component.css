@@ -1,0 +1,81 @@
+.chat-home{
+  background: rgb(255,255,255);
+  background: linear-gradient(188deg, rgba(255,255,255,1) 0%, rgba(236,248,250,1) 100%);
+  height: 100vh;
+  overflow-y: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+.header-nav{
+  background: #008AA6;
+  padding: 1em 3em;
+
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.main-container{
+  width: 100vw;
+  display: flex;
+  justify-content:center;
+  padding-top: 2em;
+}
+.chat-container{
+  width: 95vw;
+  display: flex;
+  height: 650px;
+ gap: 2em;
+
+}
+.user-container ,.msj-container{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;der: solid 2px;
+  width: 25%;
+  padding: 1em;
+
+}
+.user-container h1, .chat-container h1{
+  font-weight: 400;
+  font-size: 18px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 15px 20px -20px;
+  padding: .8em 3em;
+}
+.user-caja{
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+
+  padding: 1em 1em;
+  gap: 1em;
+  align-items: center;
+}
+.user-caja img{
+  width: 20%;
+}
+.reunion-container{
+  width: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1em 2em;
+  font-family: 'Poppins', sans-serif;
+}
+.content-name{
+  display: flex;
+  gap: 1em;
+  align-items: center;
+
+}
+.content-name a{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eeeeee;
+  border-radius: 20px;
+  color: #008AA6;
+  font-weight: bold;
+  cursor: pointer;
+}

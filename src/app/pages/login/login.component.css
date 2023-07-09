@@ -1,0 +1,62 @@
+.login-container{
+  background: rgb(255,255,255);
+  background: linear-gradient(188deg, rgba(255,255,255,1) 0%, rgba(236,248,250,1) 100%);
+  width: 98.7vw;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+
+}
+h1  {
+  font-family: 'Poppins', sans-serif;
+
+}
+.login-contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80vw;
+
+  gap: 2em;
+  height: 500px;
+}
+.header-container{
+  width: 46.8%;
+
+
+}
+.img-login{
+  width: 50%;
+
+}
+.img-login img{
+  width: 100%;
+
+}
+.nav-header{
+  width: 98.7vw;
+}
+.nav-header img{
+  margin: 3em 5em;
+}
+input {
+  border: none;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+}
+.cajadata {
+  margin: 1em 0;
+  border: 1px solid rgba(2, 93, 112, 0.5);
+  width: 60%;
+  padding: .5em;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+button{
+  width: 63%;
+  padding: 1em 2em;
+  background:#008AA6 ;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}

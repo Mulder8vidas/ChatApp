@@ -1,0 +1,52 @@
+<div class="chat-home">
+  <div class="header-nav">
+    <div class="content">
+      <div class="img-nav">
+        <img src="logo" alt="logo">
+      </div>
+      <div class="content-name">
+        <span>S</span>
+        <span>NombreUsuario</span>
+        <a >Cerrar Sesion</a>
+      </div>
+    </div>
+  </div>
+  <div class="main-container">
+  <div class="chat-container">
+    <div class="user-container">
+      <h1>Usuarios: </h1>
+      <div class="user-caja">
+        <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="">
+        <span>Nombre_Usuario</span>
+        <span ></span>
+      </div>
+    </div>
+    <div class="reunion-container">
+
+      <p-table [value]="product" [tableStyle]="{'min-width': '40rem'}">
+        <ng-template pTemplate="header">
+          <tr>
+            <td ><strong>Id</strong></td>
+            <td><strong>estado</strong></td>
+            <td><strong>fecha_reunion</strong></td>
+            <td><strong>nombre_reunion</strong></td>
+            <td><strong><a (click)="redirigir" target="_blank">Unirse</a></strong></td>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+          <tr>
+            <td>id</td>
+            <td>estado</td>
+            <td>fecha_reunion</td>
+            <td>nombre_reunions</td>
+            <td><button>Unirse</button></td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+    <div class="msj-container">
+      <h1>Anuncios: </h1>
+    </div>
+  </div>
+  </div>
+</div>
